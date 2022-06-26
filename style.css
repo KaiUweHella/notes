@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: #efefef;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    color: #999999;
+}
+
+.button-menu {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid transparent;
+    border-radius: 0 24px 24px 0;
+    cursor: pointer;
+}
+
+.button-menu p {
+    margin: 0;
+}
+
+.button-menu:hover {
+    background-color: #efefef;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.content {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.note-input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 8px 0 8px;
+}
+
+.add-note {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 16px;
+    border: 1px solid #dadada;
+    border-radius: 16px;
+}
+
+input {
+    border: none;
+    color: #333333;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-title {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.input-text {
+    font-size: 16px;
+}
+
+button {
+    color: #333333;
+    background-color: #efefef;
+    padding: 8px;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #ffe15a;
+}
+
+.d-none {
+    display: none;
+}
+
+.note-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 8px;
+    border: 1px solid #dadada;
+    border-radius: 16px;
+    box-shadow: 2px 2px 0 rgba(201, 201, 201, 0.1);
+    width: 300px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.bg-yellow{
+    background-color: #ffe15a;
+}
+
+.bg-yellow:hover{
+    background-color: #ffe15a;
+}
+
+
+@media only screen and (max-width: 520px) {
+
+    .options{
+        width: auto;
+        margin: 0 8px 0 8px;
+    }
+
+    .button-menu img {
+        width: 24px;
+        height: 24px;
+        margin-right: 0;
+    }
+
+    .note-input-field{
+        margin: 0;
+    }
+
+    .button-menu p {
+        display: none;
+    }
+
+    .button-menu{
+        border-radius: 100%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+
+    .options {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 8px 0 8px 0;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .note-field {
+        width: 100%;
+    }
+    .note{
+        width: 100%;
+    }
+
+    .add-note{
+        width: 240px;
+        box-sizing: border-box;
+    }
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <!-- Noch ein Favicon platzieren -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="template.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="render()">
+    <header class="header" id="myHeader">
+        <h1 id="headline"></h1>
+    </header>
+    <div class="content">
+        <div class="options">
+            <div class="button-menu" id="note-bg" onclick="render()">
+                <img class="img" src="img/notes.svg" alt="">
+                <p>Notizen</p>
+            </div>
+            <div class="button-menu" id="archiv-bg" onclick="renderArchiv()">
+                <img class="img" src="img/archiv.svg" alt="" >
+                <p>Archiv</p>
+            </div>
+            <div class="button-menu" id="trash-bg" onclick="renderTrash()">
+                <img class="img" src="img/bin.svg" alt="">
+                <p>Papierkorb</p>
+            </div>
+        </div>
+        <div class="note-input-field" id="note-input-field">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
